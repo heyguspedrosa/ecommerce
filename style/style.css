@@ -1,0 +1,134 @@
+:root {
+    --primary: #171427;
+    --gray100: #e8e8e8;
+    --gray200: #9c9c9c;
+    --gray300: #dddddd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: linear-gradient(white, var(--gray100));
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background: var(--primary);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.navbar input {
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.logo {
+    display: flex;
+    color: #FFFFFF;
+    font-family: "Boldonse", system-ui;
+}
+
+.logo h1 {
+    font-size: 26px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.nav-links {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links ul, li {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.nav-links ul, li, a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-links ul, li, a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin: 60px 0;
+}
+
+.title-vitrine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid var(--gray300);
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 2px 4px 10px var(--gray300);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px var(--gray300);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 0;
+}
